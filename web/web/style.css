@@ -1,0 +1,210 @@
+/* reset preflight */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+  body {
+      background-color: rgb(81, 1, 1) ;
+      
+  
+    }
+  
+  .container {
+    margin: 0 auto;
+    padding: 3rem 1rem 5rem;
+  }
+  
+  
+  header figure img {
+    width: 7rem;
+     border-radius: 50px; /*ini untuk ubah bentuk */
+    border: solid 1px rgb(255, 255, 255);
+    padding: 0.25rem;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+  }
+  
+  main .main_title {
+    margin-bottom: 36px;
+    text-align: center;
+  }
+  
+  
+  
+  main ul {
+    display: grid ;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+    
+  }
+  
+  main ul li figure.card {
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 1rem;
+  }
+  
+  main ul li figure.card .card_header { 
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+  }
+  
+  main ul li figure.card .card_header .card_image {
+    width: 128px;
+    height: 128px;
+    overflow: hidden;
+    border-radius: 12px;  
+  }
+  
+  
+  main ul li figure.card .card_header .card_description {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  
+  
+  main ul li figure.card .card_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    margin-top: 20px;
+  }
+  
+  
+  /* Footer */
+  footer {
+    padding: 3rem 1rem;
+  }
+  
+  footer section {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    justify-content: center;
+  }
+  
+  footer section img:first-child {
+    width: 3rem;
+  }
+  
+  footer section img:last-child {
+    width: 2.5rem;
+  }
+  
+  footer p {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  
+  /* Responsive Design */
+  /* Tablet */
+  @media screen and (min-width: 768px) {
+    /* Header */
+    header figure {
+      justify-content: space-between;
+    }
+  
+    header figure img {
+      order: 2;
+      width: 12rem;
+    }
+    
+    header figure figcaption {
+      order: 2;
+    }
+  
+    header figure figcaption span:last-child {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+  
+  
+    /* Main */
+    main .main_title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 1rem;
+    }
+  
+    main .main_title h2 {
+      font-size: 32px;
+    }
+  
+    main .main_title span {  
+      font-size: 20px;
+    }
+  
+    main ul {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+    main ul li figure.card .card_header .card_description span:first-child {
+      font-size: 20px;
+    }
+  }
+  
+  
+  
+  @media screen and (min-width: 1024px) {
+    /* Header */
+    header figure img {
+      width: 14rem;
+    }
+  
+  
+    Main
+    main ul {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  
+  
+  
+  span {
+    background-color: rgb(0, 0, 0) ;
+    background: linear-gradient(-45deg, #ffffff, #0400ff, #ffffff, #001eff);
+    color: transparent;
+    background-clip: padding-box;
+    background-clip: text;
+  
+  }
+  
+    
+  .container h2 {
+    color: rgb(255, 255, 255);
+    background-clip: text;
+  }
+  
+  
+  .pencarian{
+    color: #000000;
+    /* background: #2200ff; */
+    border: 1px solid #000000;
+    padding: 10px 30px;
+    font-size: 135%;
+    margin: 50px auto;
+    transition: background 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+    border-radius: 25px;
+    display: flex;
+  }
+  
+  .container h1{
+    color: #ffffff;
+  }
+  
+  p{
+    color: white;
+  }
